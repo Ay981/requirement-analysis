@@ -59,5 +59,60 @@ Requirement Analysis involves several structured activities to ensure that the s
 - **Requirement Validation**
   - Ensures that the documented requirements accurately reflect stakeholder needs and are realistic, testable, and unambiguous.
   - This often involves walkthroughs, reviews, and stakeholder approval.
+## Types of Requirements
+
+Understanding the different types of requirements is critical to building a reliable and scalable hotel booking system. These requirements are typically classified into **Functional** and **Non-functional** categories.
+
+---
+
+### Functional Requirements
+
+Functional requirements describe **what the system should do**. They define the behavior of the system based on user interactions and business needs.
+
+#### Examples from the Booking Management Project:
+
+- **Hotel Management Service:**
+  - Hotel managers can log in to a separate portal to manage hotel data.
+  - Managers can update hotel details like room availability, pricing, photos, and amenities.
+  - The system should sync updates to the master database and reflect changes in real-time.
+
+- **Customer Service (Search + Booking):**
+  - Users can search for hotels by date, location, and preferences.
+  - Users can make bookings through a booking interface.
+  - Customers can cancel or reschedule bookings.
+  - The system should interact with a payment gateway for completing bookings.
+
+- **View Booking Service:**
+  - Users (both customers and managers) can view current and past bookings.
+  - The system should retrieve recent booking data from Redis cache and archive data from Cassandra.
+
+---
+
+### Non-functional Requirements
+
+Non-functional requirements describe **how the system should behave**. These include performance, reliability, scalability, and usability characteristics.
+
+#### Examples from the Booking Management Project:
+
+- **Performance:**
+  - The system must support high traffic and concurrent user access using load balancers and server clusters.
+  - Page load time should be optimized (e.g., using Redis for caching and ElasticSearch for fast querying).
+
+- **Scalability & Availability:**
+  - The application should follow a microservices architecture to scale individual components independently.
+  - Services like Kafka and Cassandra should be used to handle high throughput and data archival.
+
+- **Security:**
+  - Secure login for both hotel managers and customers.
+  - Payment service must integrate securely with third-party payment gateways.
+
+- **Reliability & Data Consistency:**
+  - Use of master-slave DB replication ensures consistent and reliable data access.
+  - Changes must be reliably propagated to consumers via a messaging queue (Kafka).
+
+- **User Experience:**
+  - The system should provide a seamless user experience through a Content Delivery Network (CDN) for fast data loading.
+  - The booking interface must be mobile-friendly and responsive.
+
 
 
