@@ -36,4 +36,28 @@ Identifying and correcting requirement-related issues during the early stages is
 
 ### 3. Improves Product Quality and User Satisfaction
 Accurate and complete requirements lead to the development of software that meets user expectations and business needs. This enhances customer satisfaction and results in a product that is both functional and valuable.
+## Key Activities in Requirement Analysis
+
+Requirement Analysis involves several structured activities to ensure that the system meets the needs of stakeholders. Below are five key activities commonly performed during this phase:
+
+- **Requirement Gathering**
+  - This is the initial step where raw requirements are collected from stakeholders, customers, and end users.
+  - It focuses on identifying high-level business needs and objectives.
+
+- **Requirement Elicitation**
+  - Involves using techniques like interviews, questionnaires, workshops, and observation to extract detailed requirements.
+  - It bridges the communication gap between stakeholders and technical teams.
+
+- **Requirement Documentation**
+  - All gathered and elicited requirements are recorded in formal documents such as the Software Requirements Specification (SRS).
+  - Clear documentation ensures traceability and acts as a reference throughout the project lifecycle.
+
+- **Requirement Analysis and Modeling**
+  - The collected requirements are analyzed for completeness, consistency, feasibility, and priority.
+  - Models such as use case diagrams, data flow diagrams (DFDs), or UML are often created to visualize the system.
+
+- **Requirement Validation**
+  - Ensures that the documented requirements accurately reflect stakeholder needs and are realistic, testable, and unambiguous.
+  - This often involves walkthroughs, reviews, and stakeholder approval.
+
 
